@@ -64,7 +64,15 @@ Go to `Website -> Configuration -> Dynamic ES Indexing`:
 - Reindex after large catalog imports.
 
 ## Screenshots
-- Search Dropdown: `static/description/screenshot_main.png`
-- Settings: `static/description/Screenshot_config.png`
-- Product Badges: `static/description/Screenshot_badges.png`
-- Dynamic Indexing: `static/description/Screenshot_dynamic_indexing.png`
+### Search Dropdown
+  ![Search Dropdown](static/description/screenshot_main.png)
+
+  ### Settings
+  ![Settings](static/description/Screenshot_config.png)
+
+  ### Product Badges
+  ![Product Badges](static/description/Screenshot_badges.png)
+
+  ### Dynamic Indexing
+  ![Dynamic Indexing](static/description/Screenshot_dynamic_indexing.png)
+
