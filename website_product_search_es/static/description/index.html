@@ -1,184 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Website Product Search (Elasticsearch)</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: "Segoe UI", Arial, sans-serif;
-            color: #1f2937;
-            background: #f8fafc;
-            font-size: 16px;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 980px;
-            margin: 0 auto;
-            padding: 24px 16px 36px;
-        }
-        .card {
-            background: #ffffff;
-            border: 1px solid #e5e7eb;
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 16px;
-            box-sizing: border-box;
-        }
-        h1 {
-            margin: 0 0 10px;
-            font-size: 32px;
-            line-height: 1.2;
-            color: #111827;
-        }
-        h2 {
-            margin: 0 0 12px;
-            font-size: 24px;
-            line-height: 1.25;
-            color: #111827;
-        }
-        p {
-            margin: 0 0 10px;
-            font-size: 16px;
-        }
-        ul {
-            margin: 0;
-            padding-left: 20px;
-        }
-        li {
-            margin: 8px 0;
-            font-size: 16px;
-        }
-        .badge {
-            display: inline-block;
-            background: #eef2ff;
-            color: #3730a3;
-            border: 1px solid #c7d2fe;
-            border-radius: 999px;
-            padding: 5px 12px;
-            font-size: 13px;
-            margin-top: 6px;
-        }
-        .shot-wrap {
-            margin-top: 14px;
-            margin-bottom: 18px;
-        }
-        .shot-title {
-            font-size: 18px;
-            font-weight: 600;
-            margin: 0 0 8px;
-            color: #111827;
-        }
-        .shot {
-            display: block;
-            width: 100%;
-            max-width: 100%;
-            height: auto;
-            border: 1px solid #d1d5db;
-            border-radius: 10px;
-            box-sizing: border-box;
-        }
-        .shot-desc {
-            margin-top: 8px;
-            color: #4b5563;
-            font-size: 14px;
-        }
-        code {
-            background: #f3f4f6;
-            border: 1px solid #e5e7eb;
-            border-radius: 5px;
-            padding: 2px 6px;
-            font-size: 14px;
-        }
-        @media (max-width: 768px) {
-            h1 { font-size: 28px; }
-            h2 { font-size: 22px; }
-            .card { padding: 16px; }
-        }
-    </style>
-</head>
-<body>
-<div class="container">
-    <div class="card">
-        <h1>Website Product Search (Elasticsearch)</h1>
-        <p>
-            High-performance Odoo 16 eCommerce search with smart suggestions, dynamic indexing,
-            advanced filtering, and product badges.
-        </p>
-        <span class="badge">Odoo 16</span>
+<section class="oe_container">
+  <div class="oe_row oe_spaced">
+    <h2 class="oe_slogan">Website Product Search using Elasticsearch</h2>
+    <h3 class="oe_slogan">Fast, relevant, and scalable eCommerce search for Odoo 16</h3>
+    <div class="oe_demo oe_picture oe_screenshot">
+      <img src="screenshot_main.png" alt="Smart Search Dropdown"/>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container oe_dark">
+  <div class="oe_row oe_spaced">
+    <h2 class="oe_slogan">Why This Module</h2>
+    <p class="oe_mt32">
+      Standard product search becomes slow and less relevant as catalog size grows.
+      This module integrates Elasticsearch with Odoo website shop search to deliver
+      faster suggestions, better relevance, and richer customer experience.
+    </p>
+  </div>
+</section>
+
+<section class="oe_container">
+  <div class="oe_row oe_spaced">
+    <h2 class="oe_slogan">Core Features</h2>
+    <ul class="oe_mt32">
+      <li><strong>Lightning-fast search:</strong> Elasticsearch-powered product discovery for large catalogs.</li>
+      <li><strong>Smart dropdown:</strong> Product image, name, category, badges, and formatted price in suggestions.</li>
+      <li><strong>Autocomplete:</strong> Real-time type-ahead suggestions while users type.</li>
+      <li><strong>Trending intelligence:</strong> Trending searches and trending products from click/sales signals.</li>
+      <li><strong>Advanced filters:</strong> Category, brand, attributes, and min/max price filtering.</li>
+      <li><strong>Dynamic indexing:</strong> Model/domain/field mapping with searchable flags and field-level boosts.</li>
+      <li><strong>Optional auto sync:</strong> Reindex on create/write/unlink when enabled; manual/cron indexing when disabled.</li>
+      <li><strong>Auto product badges:</strong> Bestseller, Trending, New Arrival on website and backend views.</li>
+      <li><strong>Safe fallback:</strong> Odoo ORM fallback when Elasticsearch is temporarily unavailable.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="oe_container oe_dark">
+  <div class="oe_row oe_spaced">
+    <h2 class="oe_slogan">How It Works</h2>
+    <ol class="oe_mt32">
+      <li>Customer types in website search bar.</li>
+      <li>Module fetches autocomplete suggestions from Elasticsearch.</li>
+      <li>Clicks are tracked to improve trending and ranking behavior.</li>
+      <li>Search endpoint returns filtered results and facets.</li>
+      <li>Dynamic indexing config controls searchable fields and boosts.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="oe_container">
+  <div class="oe_row oe_spaced">
+    <h2 class="oe_slogan">Configuration</h2>
+    <p class="oe_mt32">
+      Go to <strong>Settings → Elasticsearch Search</strong> and configure Elasticsearch URL and index.
+      Then open <strong>Website → Configuration → Dynamic ES Indexing</strong> to control field mapping,
+      search boosts, domain filters, and auto-sync behavior.
+    </p>
+  </div>
+</section>
+
+<section class="oe_container oe_separator"></section>
+
+<section class="oe_container">
+  <div class="oe_row oe_spaced">
+    <h2 class="oe_slogan">Screenshots</h2>
+
+    <div class="oe_demo oe_picture oe_screenshot">
+      <img src="screenshot_main.png" alt="Searchbar Dropdown"/>
     </div>
 
-    <div class="card">
-        <h2>Key Features</h2>
-        <p><strong>1. Lightning-Fast Website Search</strong><br/>
-            Elasticsearch replaces slow database pattern matching for product discovery. Customers get faster response time, even on large catalogs.
-        </p>
-        <p><strong>2. Smart Search Dropdown UI</strong><br/>
-            The module replaces the default shop autocomplete dropdown with a richer experience that shows product image, name, category, badges, and formatted price.
-        </p>
-        <p><strong>3. Real-Time Autocomplete Suggestions</strong><br/>
-            While users type, live suggestions are returned from Elasticsearch. This helps customers discover products faster with fewer clicks.
-        </p>
-        <p><strong>4. Trending Searches + Trending Products</strong><br/>
-            Search interactions are logged and used to show trending search terms. Trending product suggestions are also supported to improve product discovery.
-        </p>
-        <p><strong>5. Advanced Search Filters</strong><br/>
-            Customers can refine results using category, brand, attributes, minimum price, and maximum price from the website search flow.
-        </p>
-        <p><strong>6. Dynamic ES Indexing Configuration</strong><br/>
-            Admins can configure indexing for models with custom domains, mapped fields, searchable flags, and field-level search boosts for better relevance tuning.
-        </p>
-        <p><strong>7. Optional Auto-Sync on Data Changes</strong><br/>
-            When auto-sync is enabled, Elasticsearch documents are updated on create/write/unlink events. When disabled, indexing is controlled via manual run or cron.
-        </p>
-        <p><strong>8. Product Badge Intelligence</strong><br/>
-            Products are automatically tagged as Bestseller, Trending, or New Arrival using configurable business rules. Badges appear on shop cards, product pages, and backend kanban/list views.
-        </p>
-        <p><strong>9. Graceful Fallback Behavior</strong><br/>
-            If Elasticsearch is temporarily unavailable, the module falls back to Odoo ORM search to keep the website functional.
-        </p>
+    <div class="oe_demo oe_picture oe_screenshot">
+      <img src="Screenshot_config.png" alt="Elasticsearch Settings"/>
     </div>
 
-    <div class="card">
-        <h2>Screenshots</h2>
-
-        <div class="shot-wrap">
-            <p class="shot-title">1. Smart Search Dropdown</p>
-            <img src="screenshot_main.png" alt="Smart search dropdown" class="shot"/>
-            <p class="shot-desc">Custom suggestion dropdown with rich product preview and badges.</p>
-        </div>
-
-        <div class="shot-wrap">
-            <p class="shot-title">2. Elasticsearch Settings</p>
-            <img src="Screenshot_config.png" alt="Elasticsearch settings" class="shot"/>
-            <p class="shot-desc">Enable/disable features and test ES connection from Odoo settings.</p>
-        </div>
-
-        <div class="shot-wrap">
-            <p class="shot-title">3. Product Badges</p>
-            <img src="Screenshot_badges.png" alt="Product badges" class="shot"/>
-            <p class="shot-desc">Distinct badge colors for Bestseller, Trending, and New Arrival.</p>
-        </div>
-
-        <div class="shot-wrap">
-            <p class="shot-title">4. Dynamic ES Indexing</p>
-            <img src="Screenshot_dynamic_indexing.png" alt="Dynamic indexing" class="shot"/>
-            <p class="shot-desc">Configure model, domain, field mapping, searchable flags, and boosts.</p>
-        </div>
+    <div class="oe_demo oe_picture oe_screenshot">
+      <img src="Screenshot_badges.png" alt="Product Badges"/>
     </div>
 
-    <div class="card">
-        <h2>Quick Setup</h2>
-        <ul>
-            <li>Go to <strong>Settings → Elasticsearch Search</strong>.</li>
-            <li>Set ES URL (example: <code>http://localhost:9200</code>) and index name.</li>
-            <li>Click <strong>Test Elasticsearch Connection</strong>.</li>
-            <li>Open <strong>Website → Configuration → Dynamic ES Indexing</strong>.</li>
-            <li>Create/adjust index config and run <strong>Index Now</strong>.</li>
-        </ul>
+    <div class="oe_demo oe_picture oe_screenshot">
+      <img src="Screenshot_dynamic_indexing.png" alt="Dynamic ES Indexing"/>
     </div>
-</div>
-</body>
-</html>
+  </div>
+</section>
+
+<section class="oe_container oe_separator"></section>
+
+<section class="oe_container">
+  <div class="oe_row oe_spaced">
+    <h2 class="oe_slogan">Support</h2>
+    <p class="oe_mt32">
+      For support or customization, contact: <strong>meet1432</strong>
+    </p>
+  </div>
+</section>
