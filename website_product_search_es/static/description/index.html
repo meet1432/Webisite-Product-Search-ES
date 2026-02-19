@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Website Product Search (Elasticsearch)</title>
+    <style>
+        body { font-family: Arial, sans-serif; color: #1f2937; margin: 0; background: #f8fafc; }
+        .wrap { max-width: 980px; margin: 0 auto; padding: 24px; }
+        .hero { background: #ffffff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; }
+        .title { margin: 0; font-size: 28px; line-height: 1.2; }
+        .subtitle { margin-top: 8px; color: #4b5563; font-size: 15px; }
+        .pill { display: inline-block; margin-top: 14px; background: #eef2ff; color: #3730a3; border-radius: 999px; padding: 6px 12px; font-size: 12px; }
+        .section { margin-top: 20px; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; }
+        h2 { margin: 0 0 12px 0; font-size: 20px; }
+        ul { margin: 0; padding-left: 18px; }
+        li { margin: 8px 0; }
+        .shot { width: 100%; border: 1px solid #d1d5db; border-radius: 10px; display: block; }
+        .small { margin-top: 8px; color: #6b7280; font-size: 12px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+        code { background: #f3f4f6; padding: 2px 5px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="hero">
+        <h1 class="title">Website Product Search (Elasticsearch)</h1>
+        <div class="subtitle">
+            Odoo Smart Search using Elasticsearch delivers lightning-fast product discovery, real-time suggestions, and a cleaner buying experience on your website.
+        </div>
+        <div class="pill">Odoo 16</div>
+    </div>
+
+    <div class="section">
+        <h2>Screenshots</h2>
+        <div class="grid">
+            <div>
+                <img src="screenshot_main.png" alt="Shop searchbar dropdown with Elasticsearch suggestions" class="shot"/>
+                <div class="small">Custom search dropdown with product image, name, category, price, trending products and trending searches.</div>
+            </div>
+            <div>
+                <img src="Screenshot_config.png" alt="Elasticsearch settings in Odoo" class="shot"/>
+                <div class="small">Dedicated settings panel for Elasticsearch URL, index, autocomplete, trending and stock behavior.</div>
+            </div>
+            <div>
+                <img src="Screenshot_badges.png" alt="Auto badges on product cards and product page" class="shot"/>
+                <div class="small">Auto-classified badges with distinct colors on products: Bestseller, Trending, and New Arrival.</div>
+            </div>
+            <div>
+                <img src="Screenshot_dynamic_indexing.png" alt="Dynamic Elasticsearch indexing configuration in Odoo" class="shot"/>
+                <div class="small">Dynamic ES indexing configuration with model selection, field mapping, search boost, and domain-based indexing.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Lightning-fast search results on Odoo eCommerce, even with large product catalogs.</li>
+            <li>Custom smart dropdown for website shop search (replaces base dropdown).</li>
+            <li>Product suggestions with image, title, category, and formatted price.</li>
+            <li>Auto-complete and type-ahead suggestions while customer types.</li>
+            <li>Trending products ranked using actual sales data.</li>
+            <li>Trending searches based on real click analytics (noise filtered).</li>
+            <li>Advanced filtering by category, brand, attributes, and price range.</li>
+            <li>Elasticsearch facet aggregations for category/brand/attribute/price buckets.</li>
+            <li>Option to hide out-of-stock products from results.</li>
+            <li>Index sync on create/update/delete and scheduled cron reindex.</li>
+            <li>Dynamic indexing config for model/field mapping with field-level search boosts.</li>
+            <li>Click-through analytics + click-aware reranking for better relevance over time.</li>
+            <li>Safe fallback to Odoo ORM search if Elasticsearch is unavailable.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Why Elasticsearch</h2>
+        <ul>
+            <li>Elasticsearch uses inverted indexing for fast full-text lookup.</li>
+            <li>Search is optimized for relevance and speed, unlike simple DB pattern scans.</li>
+            <li>It scales better for real-time website search and suggestion experiences.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Index Management</h2>
+        <ul>
+            <li>Configure Elasticsearch URL and index directly from Odoo Settings.</li>
+            <li>Manage dynamic indexing from <b>Website → Configuration → Dynamic ES Indexing</b>.</li>
+            <li>Choose model, domain, mapped fields, searchable flags, and search boosts.</li>
+            <li>Track indexing status/history for debugging.</li>
+            <li>Use scheduled cron to keep new/updated products in sync automatically.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Configuration</h2>
+        <div class="grid">
+            <div>
+                <ul>
+                    <li>Go to <b>Settings → Elasticsearch Search</b>.</li>
+                    <li>Enable Elasticsearch Search.</li>
+                    <li>Set Elasticsearch URL (for example <code>http://localhost:9200</code>).</li>
+                    <li>Set index name (default <code>odoo_dynamic</code>).</li>
+                    <li>Use <b>Test Elasticsearch Connection</b> button to verify connectivity.</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Enable/disable autocomplete and trending searches.</li>
+                    <li>Optionally hide out-of-stock products.</li>
+                    <li>Use Dynamic ES Indexing to control field mapping and search boost.</li>
+                    <li>Run reindex cron or wait for automatic indexing.</li>
+                    <li>Use website search bar as usual on Shop page.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
