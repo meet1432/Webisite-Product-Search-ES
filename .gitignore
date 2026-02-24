@@ -1,2 +1,4 @@
 __pycache__/
 *.py[cod]
+website_product_search_es/__pycache__/
+website_product_search_es/**/*.py[cod]
